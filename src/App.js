@@ -30,7 +30,7 @@ function Sphere(props) {
         clearcoat={0.8}
         clearcoatRoughness={0}
         roughness={1}
-        metalness={0}
+        metalness={1}
       />
     </mesh>
   );
