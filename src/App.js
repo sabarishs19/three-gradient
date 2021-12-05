@@ -1,10 +1,13 @@
-import "./styles.css";
+import React, { Suspense } from "react";
+import { Canvas, extend, useLoader } from "@react-three/fiber";
+import {
+  OrbitControls,
+  Environment,
+  Effects,
+  Loader,
+  useTexture
+} from "@react-three/drei";
+import { LUTPass } from "three/examples/jsm/postprocessing/LUTPass";
+import { LUTCubeLoader } from "three/examples/jsm/loaders/LUTCubeLoader";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+extend({ LUTPass });
